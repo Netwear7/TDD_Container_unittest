@@ -1,0 +1,11 @@
+Nous allons prendre le cas d'un développement d'une fonctionnalité d'un jeu
+vidéo qui consiste à définir un contenant,
+
+
+ par exemple une bouteille, qu'un joueur pourrait l'utiliser pour boire, la remplir et qui possède une durabilité.
+
+
+À chaque utilisation du contenant, celle-ci perdra un demi-point durabilité lorsqu'on l'a rempli
+et un point de durabilité lorsqu'elle est utilisée.
+
+Si la durabilité tombe à zéro, le contenant est inutilisable.
