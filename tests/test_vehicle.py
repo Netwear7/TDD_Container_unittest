@@ -35,8 +35,9 @@ class TestVehicle(unittest.TestCase):
         self.assertIsInstance(self.v, Vehicle)
 
     def test_marque_is_not_empty(self):
-
-
+        temp_marque = self.v.v_marque.strip()
+        self.assertNotEqual(temp_marque, "")
+        # self.assertNotEqual(self.v.v_marque, "")
 
 
 
