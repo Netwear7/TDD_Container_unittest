@@ -9,3 +9,35 @@ vidéo qui consiste à définir un contenant,
 et un point de durabilité lorsqu'elle est utilisée.
 
 Si la durabilité tombe à zéro, le contenant est inutilisable.
+
+
+_____________________________________________________________________________________________________________________
+
+Un concessionnaire souhaite :
+
+- répertorier l'ensemble des voitures qu'il possède
+    (dans le magasin afin de donner le maximum d'informations à ses clients par téléphone.)
+
+Vous devez réfléchir aux informations nécessaires à afficher (dans le terminal)
+pour aider les commerciaux en télétravail à répondre aux demandes.
+
+Dans un premier temps:
+- vous allez écrire les tests
+- puis après écrire le programme.
+
+electrique essence hybrique diesel
+
+
+ Classe mère:
+ Marque
+ Modele
+ Prix
+ nbr place
+ roue
+ type motorisation(diesel)
+ poids
+ year
+ is used
+
+ car (fille):
+ porte
