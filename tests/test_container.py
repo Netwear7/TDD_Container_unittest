@@ -24,6 +24,11 @@ class TestContainer(unittest.TestCase):
         # ctn_type / durability / capacity ml / capacity_max
         self.c = Container("Bouteille", 30, 50, 100)
 
+    def tearDown(self):
+        self.c.ctn_durability = 30
+        self.c.ctn_capacity = 50
+        self.c.ctn_capacity_max = 100
+
     def test_container_is_instance(self):
         """
         Test class is instance of Container.
@@ -65,6 +70,3 @@ class TestContainer(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-# tester le remplissage
-# tester la capacité minimum
