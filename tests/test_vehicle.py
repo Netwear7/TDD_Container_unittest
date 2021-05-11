@@ -1,16 +1,20 @@
 """
 Test class Vehicle
 
-Attribut
-marque:
-model:
-price:
-place:
-wheels:
-type:
-weight:
-year:
-is_used:
+Attribut:
+Vehicle("Renault", "Megan", 3000, 5, 4, "gazole", 1300, 2003, True)
+
+marque: NOT NULL    (exemple : "Renault")   ---> String         Marque du véhicule
+model: NOT NULL     (exemple : "Megan")     ---> String         Modèle du véhicule
+price: NOT NULL     (exemple : 3000)        ---> Integer        Prix du véhicule
+place: NOT NULL     (exemple : 5)           ---> Integer        Nombre de places
+wheels: NOT NULL    (exemple : 4)           ---> Integer        Nombre de roues
+type: NOT NULL      (exemple : "gazole")    ---> String         Type du moteur
+weight: NOT NULL    (exemple : 1300)        ---> Integer        Poids du véhicule
+year: NOT NULL      (exemple : 2003)        ---> Integer        Année du véhicule
+is_used: NOT NULL   (exemple : True)        ---> Bool           True si c'est d'occasion
+
+
 """
 
 # Import :
@@ -34,7 +38,7 @@ class TestVehicle(unittest.TestCase):
         Method called to prepare the test fixture.
         """
         # Marque, Modele, Prix, nbr_place, roue, type_motorisation(diesel), poids, year, is used
-        self.v = Vehicle("Renault", "Megan", 3000, 5, 4, "diesel", 1300, 2003, True)
+        self.v = Vehicle("Renault", "Megan", 3000, 5, 4, "gazole", 1300, 2003, True)
 
     # def tearDown(self):
     #     pass
@@ -79,6 +83,12 @@ class TestVehicle(unittest.TestCase):
         """
         self.assertGreater(self.v.v_price, 0)
 
+    def test_price_is_float(self):
+        """
+        Test if price is float type
+        """
+        self.assertIs(type(self.v.v_price), float)
+
     # nbr_place
     #       Tester que le nbr de place est supérieur à 0.
     # ____________________________________________________________________
@@ -98,8 +108,10 @@ class TestVehicle(unittest.TestCase):
         self.assertGreaterEqual(self.v.v_wheels, 2)
 
     # type_motorisation(diesel)
-    # TODO Tester que la motorisation fait partie du tableau ["diesel", "gazole", "electrique", "hybride"]
+    #       Tester que la motorisation fait partie du tableau ["diesel", "gazole", "electrique", "hybride"]
     # ____________________________________________________________________
+    def test_type_is_valid(self):
+        self.assertIn(self.v.v_type, ["diesel", "gazole", "electrique", "hybride"])
 
     # poids
     #       Tester que le poids est supérieur à 100kg
@@ -111,13 +123,29 @@ class TestVehicle(unittest.TestCase):
         self.assertGreaterEqual(self.v.v_weight, 100)
 
     # year
-    # TODO  Tester que l'année est bien un chiffre
-    # TODO  Tester que l'année est supérieur à 1900
+    #       Tester que l'année est bien un chiffre
+    #       Tester que l'année est supérieur à 1769
     # ____________________________________________________________________
+    def test_year_is_number(self):
+        """
+        Test if year is number type
+        """
+        self.assertIs(type(self.v.v_year), int)
+
+    def test_year_not_before_created_vehicle(self):
+        """
+        Test year is greater than 1769
+        """
+        self.assertGreaterEqual(self.v.v_year, 1769)
 
     # is used
-    # TODO  Tester le type est boolean
+    #       Tester le type est boolean
     # ____________________________________________________________________
+    def test_is_used_is_boolean(self):
+        """
+        Test if is_used is boolean type
+        """
+        self.assertIs(type(self.v.v_is_used), bool)
 
 
 if __name__ == '__main__':

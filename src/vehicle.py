@@ -12,16 +12,15 @@ class Vehicle:
 
     def __init__(self, marque, model, price, place, wheels, type, weight, year, is_used):
         """
-        # TODO
-        :param marque:
-        :param model:
-        :param price:
-        :param place:
-        :param wheels:
-        :param type:
-        :param weight:
-        :param year:
-        :param is_used:
+        :param marque: Marque du véhicule
+        :param model: Modèle du véhicule
+        :param price: Prix du véhicule
+        :param place: Nombre de places
+        :param wheels: Nombre de roues
+        :param type: Type du moteur
+        :param weight: Poids du véhicule
+        :param year: Année du véhicule
+        :param is_used: True si c'est d'occasion
         """
         self.v_marque = marque
         self.v_model = model
