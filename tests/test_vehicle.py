@@ -4,15 +4,15 @@ Test class Vehicle
 Attribut:
 Vehicle("Renault", "Megan", 3000, 5, 4, "gazole", 1300, 2003, True)
 
-marque: NOT NULL    (exemple : "Renault")   ---> String         Marque du véhicule
-model: NOT NULL     (exemple : "Megan")     ---> String         Modèle du véhicule
-price: NOT NULL     (exemple : 3000)        ---> Integer        Prix du véhicule
-place: NOT NULL     (exemple : 5)           ---> Integer        Nombre de places
-wheels: NOT NULL    (exemple : 4)           ---> Integer        Nombre de roues
-type: NOT NULL      (exemple : "gazole")    ---> String         Type du moteur
-weight: NOT NULL    (exemple : 1300)        ---> Integer        Poids du véhicule
-year: NOT NULL      (exemple : 2003)        ---> Integer        Année du véhicule
-is_used: NOT NULL   (exemple : True)        ---> Bool           True si c'est d'occasion
+v_marque: NOT NULL    (exemple : "Renault")   ---> String         Marque du véhicule
+v_model: NOT NULL     (exemple : "Megan")     ---> String         Modèle du véhicule
+v_price: NOT NULL     (exemple : 3000)        ---> Integer        Prix du véhicule
+v_place: NOT NULL     (exemple : 5)           ---> Integer        Nombre de places
+v_wheels: NOT NULL    (exemple : 4)           ---> Integer        Nombre de roues
+v_type: NOT NULL      (exemple : "gazole")    ---> String         Type du moteur
+v_weight: NOT NULL    (exemple : 1300)        ---> Integer        Poids du véhicule
+v_year: NOT NULL      (exemple : 2003)        ---> Integer        Année du véhicule
+v_is_used: NOT NULL   (exemple : True)        ---> Bool           True si c'est d'occasion
 
 
 """
