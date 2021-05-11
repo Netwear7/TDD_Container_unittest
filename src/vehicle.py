@@ -10,13 +10,13 @@ class Vehicle:
     Class Vehicle.
     """
 
-    def __init__(self, marque, model, price, places, wheels, type, weight, year, is_used):
+    def __init__(self, marque, model, price, place, wheels, type, weight, year, is_used):
         """
         # TODO
         :param marque:
         :param model:
         :param price:
-        :param places:
+        :param place:
         :param wheels:
         :param type:
         :param weight:
@@ -26,7 +26,7 @@ class Vehicle:
         self.v_marque = marque
         self.v_model = model
         self.v_price = price
-        self.v_places = places
+        self.v_place = place
         self.v_wheels = wheels
         self.v_type = type
         self.v_weight = weight
