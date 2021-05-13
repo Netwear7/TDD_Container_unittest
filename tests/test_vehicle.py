@@ -30,7 +30,7 @@ from src.vehicle import Vehicle
 # Class test :
 class TestVehicle(unittest.TestCase):
     """
-    TDD on class Container
+    TDD on class Vehicle
     """
 
     def setUp(self):
